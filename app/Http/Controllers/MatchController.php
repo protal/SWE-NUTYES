@@ -11,8 +11,8 @@ class MatchController extends Controller
     {
 
       // $user = ['name' => 'Somthong' , "age" => "23" , "food" => "thai" , "music" => "rock" , "pet" => "cat" , "work" => "engineer" , "lifestyle" => "night" ];
-      $user['name'] = $request->input('nicname');
-      $user['firstname'] = $request->input('name');
+      $user['name'] = $request->input('name');
+      $user['firstname'] = $request->input('firstname');
       $user['lastname'] = $request->input('lastname');
       $user['sex'] = $request->input('sex');
       $user['food'] = $request->input('food');
@@ -25,21 +25,21 @@ class MatchController extends Controller
 
       echo "<h1>NOW USER :</h1><br>";
       echo " name : ".$user['name'];
-      echo " firstname : ".$user['firstname'];
-      echo " lastname : ".$user['lastname'];
-      echo " sex : ".$user['sex'];
-      echo " food : ".$user['food'];
-      echo " music : ".$user['music'];
-      echo " pet : ".$user['pet'];
-      echo " work : ".$user['work'];
-      echo " lifestyle : ".$user['lifestyle'];
-      echo " age : ".$user['age'];
+      echo "<br> firstname : ".$user['firstname'];
+      echo "<br> lastname : ".$user['lastname'];
+      echo "<br> sex : ".$user['sex'];
+      echo "<br> food : ".$user['food'];
+      echo "<br> music : ".$user['music'];
+      echo "<br> pet : ".$user['pet'];
+      echo "<br> work : ".$user['work'];
+      echo "<br> lifestyle : ".$user['lifestyle'];
+      echo "<br> age : ".$user['age'];
       echo "<br>";
 
       $users = [
-        ['name' => 'Sompong' ,'firstname' => 'Sompong' , 'lastname' => 'thongdee' , "sex" => "female" , "age" => "24" , "food" => "thai" , "music" => "rock" , "pet" => "cat" , "work" => "engineer" , "lifestyle" => "night" ],
-        ['name' => 'thu' , 'firstname' => 'Prayut' , 'lastname' => 'chanocha' , "sex" => "male" , "age" => "27" , "food" => "thai" , "music" => "pop" , "pet" => "dog" , "work" => "president" , "lifestyle" => "day" ],
-        ['name' => 'pom' , 'firstname' => 'Prawit' ,'lastname' => 'wongsuwan' , "sex" => "male" , "age" => "34" , "food" => "japan" , "music" => "rock" , "pet" => "cat" , "work" => "president" , "lifestyle" => "night" ],
+        ['name' => 'Yood' ,'firstname' => 'Sompong' , 'lastname' => 'thongdee' , "sex" => "Female" , "age" => "24" , "food" => "Thai" , "music" => "rock" , "pet" => "Cat" , "work" => "engineer" , "lifestyle" => "Night" ],
+        ['name' => 'Thu' , 'firstname' => 'Prayut' , 'lastname' => 'chanocha' , "sex" => "Male" , "age" => "27" , "food" => "Thai" , "music" => "pop" , "pet" => "Dog" , "work" => "president" , "lifestyle" => "Day" ],
+        ['name' => 'Phom' , 'firstname' => 'Prawit' ,'lastname' => 'wongsuwan' , "sex" => "Male" , "age" => "34" , "food" => "Japan" , "music" => "rock" , "pet" => "Cat" , "work" => "president" , "lifestyle" => "Night" ],
       ];
 
       // dd($users);
@@ -79,7 +79,7 @@ class MatchController extends Controller
           $sum++;
         }
       $percent = ($sum/6)*100 ;
-      echo "score ". number_format($percent, 2, '.', '')."%<br>";
+      echo " score ". number_format($percent, 2, '.', '')."%<br>";
       }
     }
 }

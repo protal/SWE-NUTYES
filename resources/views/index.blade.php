@@ -42,43 +42,47 @@
 </div>
   <center><div class="w3-card-4" style="width:50%">
    <header class="w3-container w3-light-grey">
-     <h3>Profile</h3>
-     First name: <input type="text" name="fname"><br><br>
-     Last name: <input type="text" name="lname"><br><br>
-     Name: <input type="text" name="lname"><br><br>
-     Sex:   <input type="radio" name="gender" value="male"> Male
-     <input type="radio" name="gender" value="female"> Female<br><br>
-     Age: <select>
-          <option >15-20</option>
-          <option >20-25</option>
-          <option >25-30</option>
-          <option >30-35</option>
-          <option >35-40</option>
-        </select><br><br>
-      Food: <select>
-          <option >Thai</option>
-          <option >Japan</option>
-          <option >Eng</option>
-          <option >Italian</option>
-        </select><br><br>
-      Music: <select>
-          <option >pop</option>
-          <option >rock</option>
-          <option >jazz</option>
-          <option >clasic</option>
-        </select><br><br>
-      Pet: <select>
-          <option >Dog</option>
-          <option >Cat</option>
-          <option >Bird</option>
-          <option >Spider</option>
-        </select><br><br>
-      Lifestyle: <select>
-          <option >Day</option>
-          <option >Night</option>
-        </select><br><br>
+     <form class="" action="{{url('match')}}" method="get">
+       <h3>Profile</h3>
+       First name: <input type="text" name="firstname"><br><br>
+       Last name: <input type="text" name="lastname"><br><br>
+       Name: <input type="text" name="name"><br><br>
+       Sex:   <input type="radio" name="sex" value="male"> Male
+       <input type="radio" name="sex" value="female"> Female<br><br>
+
+       Age:<input type="text" name="age"><br><br>
+        Food: <select name="food">
+            <option >Thai</option>
+            <option >Japan</option>
+            <option >Eng</option>
+            <option >Italian</option>
+          </select><br><br>
+        Music: <select name="music">
+            <option >pop</option>
+            <option >rock</option>
+            <option >jazz</option>
+            <option >clasic</option>
+          </select><br><br>
+        Pet: <select name="pet">
+            <option >Dog</option>
+            <option >Cat</option>
+            <option >Bird</option>
+            <option >Spider</option>
+          </select><br><br>
+        Work: <select name="work">
+              <option >president</option>
+              <option >engineer</option>
+              <option >teacher</option>
+              <option >student</option>
+            </select><br><br>
+        Lifestyle: <select name="lifestyle">
+            <option >Day</option>
+            <option >Night</option>
+          </select><br><br>
+          <button type="submit" class="w3-button w3-block w3-dark-grey">Submit</button>
+     </form>
    </header>
-   <button class="w3-button w3-block w3-dark-grey">Submit</button>
+
  </div></center>
 <div>
 </body>
