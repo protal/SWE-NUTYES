@@ -14,9 +14,11 @@
       }
 </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../17_08_60/bootstrap/css/bootstrap.min.css">
-  <script src="../17_08_60/bootstrap/js/jquery.min.js"></script>
-  <script src="../17_08_60/bootstrap/js/bootstrap.min.js"></script>
+	g
+	<script src="{{asset('js/jquery.min.js')}}"></script>
+    <link  href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+ 
+  <script src="{{asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body background="../mystory/image/pg4.jpg" bgproperties="fixed">
   <nav class="navbar navbar-inverse">
@@ -26,6 +28,13 @@
       </div>
       <ul class="nav navbar-nav">
         <li class="active"><a href="home.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mystory
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Mystoryeditionn.html"><span class=""></span>Me</a></li>
+            <li><a href="">xx</a></li>
+          </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -45,41 +54,20 @@
      <h3>Profile</h3>
      First name: <input type="text" name="fname"><br><br>
      Last name: <input type="text" name="lname"><br><br>
-     Name: <input type="text" name="lname"><br><br>
-     Sex:   <input type="radio" name="gender" value="male"> Male
+     Nick name: <input type="text" name="lname"><br><br>
+     Sex: <input type="radio" name="gender" value="male"> Male
      <input type="radio" name="gender" value="female"> Female<br><br>
-     Age: <select>
-          <option >15-20</option>
-          <option >20-25</option>
-          <option >25-30</option>
-          <option >30-35</option>
-          <option >35-40</option>
-        </select><br><br>
-      Food: <select>
-          <option >Thai</option>
-          <option >Japan</option>
-          <option >Eng</option>
-          <option >Italian</option>
-        </select><br><br>
-      Music: <select>
-          <option >pop</option>
-          <option >rock</option>
-          <option >jazz</option>
-          <option >clasic</option>
-        </select><br><br>
-      Pet: <select>
-          <option >Dog</option>
-          <option >Cat</option>
-          <option >Bird</option>
-          <option >Spider</option>
-        </select><br><br>
-      Lifestyle: <select>
-          <option >Day</option>
-          <option >Night</option>
-        </select><br><br>
+     Age <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+
    </header>
-   <button class="w3-button w3-block w3-dark-grey">Submit</button>
+   <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
  </div></center>
+
 <div>
 </body>
 </html>
