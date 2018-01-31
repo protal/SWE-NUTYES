@@ -18,7 +18,7 @@
 	<script src="{{asset('js/jquery.min.js')}}"></script>
     <link  href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
  
-  <script src="{{asset('js/bootstrap.min.js')}}"></script>
+  <script src="{{asset('js/bootstrap.min.js')}}gi"></script>
 </head>
 <body background="../mystory/image/pg4.jpg" bgproperties="fixed">
   <nav class="navbar navbar-inverse">
@@ -51,7 +51,7 @@
 </div>
   <center><div class="w3-card-4" style="width:50%">
    <header class="w3-container w3-light-grey">
-     <h3>Profile</h3>
+     <!-- <h3>Profile</h3>
      First name: <input type="text" name="fname"><br><br>
      Last name: <input type="text" name="lname"><br><br>
      Nick name: <input type="text" name="lname"><br><br>
@@ -62,7 +62,17 @@
           <option value="saab">Saab</option>
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
-        </select>
+        </select> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  	<link href="{{asset('css/style.css')}}" rel="stylesheet" />
+<div class="card">
+  <img src=https://www.shareicon.net/data/2016/07/26/802011_man_512x512.png alt="John" style="width:30%">
+  <h1>John Snow</h1>
+  <p class="title">CEO & Founder, Example</p>
+  <p>Harvard University</p>
+  
+  <p><button>Contact</button></p>
+</div>
 
    </header>
    <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
