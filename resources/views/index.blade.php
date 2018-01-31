@@ -14,9 +14,11 @@
       }
 </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../17_08_60/bootstrap/css/bootstrap.min.css">
-  <script src="../17_08_60/bootstrap/js/jquery.min.js"></script>
-  <script src="../17_08_60/bootstrap/js/bootstrap.min.js"></script>
+	g
+	<script src="{{asset('js/jquery.min.js')}}"></script>
+    <link  href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <script src="{{asset('js/bootstrap.min.js')}}"></script>
 </head>
 <body background="../mystory/image/pg4.jpg" bgproperties="fixed">
   <nav class="navbar navbar-inverse">
@@ -26,6 +28,13 @@
       </div>
       <ul class="nav navbar-nav">
         <li class="active"><a href="home.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mystory
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Mystoryeditionn.html"><span class=""></span>Me</a></li>
+            <li><a href="">xx</a></li>
+          </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -84,6 +93,7 @@
    </header>
 
  </div></center>
+
 <div>
 </body>
 </html>
